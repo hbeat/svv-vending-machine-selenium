@@ -1,5 +1,8 @@
 package th.ac.kmitl.se;
 
+import org.graphwalker.java.annotation.AfterExecution;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -36,7 +39,7 @@ public class SystemTest {
     }
 
     @Test
-    public void test1() throws java.io.IOException {
+    public void test1() {
         System.out.println("Test 1");
         WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(10));
 
